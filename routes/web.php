@@ -18,5 +18,6 @@ Route::get('/', function () {
 //微信公众号
 Route::namespace ('Wechat')->prefix('wechat')->group(function () {
     Route::any('server', 'OfficialController@server');
-
 });
+
+Route::get('/card', 'CardController@makeCard');
